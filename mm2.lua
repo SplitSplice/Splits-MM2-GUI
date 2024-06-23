@@ -1,190 +1,191 @@
--- Instances
+local Instances = {
+	SplitsGUI = Instance.new("ScreenGui"),
+	Frame = Instance.new("Frame"),
+	name1 = Instance.new("TextLabel"),
+	name2 = Instance.new("TextLabel"),
+	Gun = Instance.new("TextButton"),
+	UICorner = Instance.new("UICorner"),
+	UICorner_2 = Instance.new("UICorner"),
+	Knife = Instance.new("TextButton"),
+	UICorner_3 = Instance.new("UICorner"),
+	name1_2 = Instance.new("TextLabel"),
+	X = Instance.new("TextButton"),
+	UICorner_4 = Instance.new("UICorner"),
+	open = Instance.new("TextButton"),
+	UICorner_5 = Instance.new("UICorner"),
+}
 
-local SplitsGUI = Instance.new("ScreenGui")
-local UIFrame = Instance.new("Frame")
-local name1 = Instance.new("TextLabel")
-local name2 = Instance.new("TextLabel")
-local Gun = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local UICorner_2 = Instance.new("UICorner")
-local Knife = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local name1_2 = Instance.new("TextLabel")
-local X = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local open = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+Instances.SplitsGUI.Name = "SplitsGUI"
+Instances.SplitsGUI.ResetOnSpawn = false
+Instances.SplitsGUI.Parent = game.StarterGui
 
--- Properties
+Instances.Frame.Name = "Frame"
+Instances.Frame.Parent = Instances.SplitsGUI
+Instances.Frame.Size = UDim2.new(0, 448, 0, 490)
+Instances.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Frame.BackgroundTransparency = 0.30000001192092896
+Instances.Frame.Position = UDim2.new(0.24860023, 0, 0.169811323, 0)
+Instances.Frame.BorderSizePixel = 0
+Instances.Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
 
-SplitsGUI.Name = "SplitsGUI"
-SplitsGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SplitsGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Instances.name1.Name = "name1"
+Instances.name1.Parent = Instances.Frame
+Instances.name1.Size = UDim2.new(0, 166, 0, 34)
+Instances.name1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.name1.BackgroundTransparency = 1
+Instances.name1.Position = UDim2.new(0.015625, 0, 0.0142857144, 0)
+Instances.name1.BorderSizePixel = 0
+Instances.name1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name1.Text = "Split's MM2 Clone"
+Instances.name1.TextWrapped = true
+Instances.name1.TextSize = 14
+Instances.name1.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.name1.TextScaled = true
 
-UIFrame.Name = "UIFrame"
-UIFrame.Parent = SplitsGUI
-UIFrame.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
-UIFrame.BackgroundTransparency = 0.30000001192092896
-UIFrame.BorderColor3 = Color3.new(0, 0, 0)
-UIFrame.BorderSizePixel = 0
-UIFrame.Position = UDim2.new(0.24860023, 0, 0.169811323, 0)
-UIFrame.Size = UDim2.new(0, 448, 0, 490)
+Instances.name2.Name = "name2"
+Instances.name2.Parent = Instances.Frame
+Instances.name2.Size = UDim2.new(0, 57, 0, 21)
+Instances.name2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.name2.BackgroundTransparency = 1
+Instances.name2.Position = UDim2.new(0.348214298, 0, 0.0142857144, 0)
+Instances.name2.BorderSizePixel = 0
+Instances.name2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name2.Text = "TROLLING GUI!"
+Instances.name2.TextWrapped = true
+Instances.name2.TextSize = 14
+Instances.name2.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.name2.TextScaled = true
 
-name1.Name = "name1"
-name1.Parent = UIFrame
-name1.BackgroundColor3 = Color3.new(1, 1, 1)
-name1.BackgroundTransparency = 1
-name1.BorderColor3 = Color3.new(0, 0, 0)
-name1.BorderSizePixel = 0
-name1.Position = UDim2.new(0.015625, 0, 0.0142857144, 0)
-name1.Size = UDim2.new(0, 166, 0, 34)
-name1.Font = Enum.Font.FredokaOne
-name1.Text = "Split's MM2 Clone"
-name1.TextColor3 = Color3.new(1, 1, 1)
-name1.TextScaled = true
-name1.TextSize = 14
-name1.TextWrapped = true
+Instances.Gun.Name = "Gun"
+Instances.Gun.Parent = Instances.Frame
+Instances.Gun.Size = UDim2.new(0, 200, 0, 50)
+Instances.Gun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Gun.BackgroundTransparency = 0.5
+Instances.Gun.Position = UDim2.new(0.0290178563, 0, 0.226530612, 0)
+Instances.Gun.BorderSizePixel = 0
+Instances.Gun.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Instances.Gun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Gun.Text = "Give Gun (FE)"
+Instances.Gun.TextWrapped = true
+Instances.Gun.TextSize = 14
+Instances.Gun.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.Gun.TextScaled = true
 
-name2.Name = "name2"
-name2.Parent = UIFrame
-name2.BackgroundColor3 = Color3.new(1, 1, 1)
-name2.BackgroundTransparency = 1
-name2.BorderColor3 = Color3.new(0, 0, 0)
-name2.BorderSizePixel = 0
-name2.Position = UDim2.new(0.348214298, 0, 0.0142857144, 0)
-name2.Size = UDim2.new(0, 57, 0, 21)
-name2.Font = Enum.Font.FredokaOne
-name2.Text = "TROLLING GUI!"
-name2.TextColor3 = Color3.new(1, 1, 1)
-name2.TextScaled = true
-name2.TextSize = 14
-name2.TextWrapped = true
+Instances.UICorner.Name = "UICorner"
+Instances.UICorner.Parent = Instances.Gun
+Instances.UICorner.CornerRadius = UDim.new(0, 15)
 
-Gun.Name = "Gun"
-Gun.Parent = UIFrame
-Gun.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
-Gun.BackgroundTransparency = 0.5
-Gun.BorderColor3 = Color3.new(0, 0, 0)
-Gun.BorderSizePixel = 0
-Gun.Position = UDim2.new(0.0290178563, 0, 0.226530612, 0)
-Gun.Size = UDim2.new(0, 200, 0, 50)
-Gun.Font = Enum.Font.FredokaOne
-Gun.Text = "Give Gun (FE)"
-Gun.TextColor3 = Color3.new(1, 1, 1)
-Gun.TextScaled = true
-Gun.TextSize = 14
-Gun.TextWrapped = true
+Instances.UICorner_2.Name = "UICorner"
+Instances.UICorner_2.Parent = Instances.Frame
+Instances.UICorner_2.CornerRadius = UDim.new(0, 5)
 
-UICorner.Parent = Gun
-UICorner.CornerRadius = UDim.new(0, 15)
+Instances.Knife.Name = "Knife"
+Instances.Knife.Parent = Instances.Frame
+Instances.Knife.Size = UDim2.new(0, 200, 0, 50)
+Instances.Knife.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Knife.BackgroundTransparency = 0.5
+Instances.Knife.Position = UDim2.new(0.524553597, 0, 0.226530612, 0)
+Instances.Knife.BorderSizePixel = 0
+Instances.Knife.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Instances.Knife.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Knife.Text = "Give Knife (FE)"
+Instances.Knife.TextWrapped = true
+Instances.Knife.TextSize = 14
+Instances.Knife.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.Knife.TextScaled = true
 
-UICorner_2.Parent = UIFrame
-UICorner_2.CornerRadius = UDim.new(0, 5)
+Instances.UICorner_3.Name = "UICorner"
+Instances.UICorner_3.Parent = Instances.Knife
+Instances.UICorner_3.CornerRadius = UDim.new(0, 15)
 
-Knife.Name = "Knife"
-Knife.Parent = UIFrame
-Knife.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
-Knife.BackgroundTransparency = 0.5
-Knife.BorderColor3 = Color3.new(0, 0, 0)
-Knife.BorderSizePixel = 0
-Knife.Position = UDim2.new(0.524553597, 0, 0.226530612, 0)
-Knife.Size = UDim2.new(0, 200, 0, 50)
-Knife.Font = Enum.Font.FredokaOne
-Knife.Text = "Give Knife (FE)"
-Knife.TextColor3 = Color3.new(1, 1, 1)
-Knife.TextScaled = true
-Knife.TextSize = 14
-Knife.TextWrapped = true
+Instances.name1_2.Name = "name1"
+Instances.name1_2.Parent = Instances.Frame
+Instances.name1_2.Size = UDim2.new(0, 282, 0, 253)
+Instances.name1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.name1_2.BackgroundTransparency = 1
+Instances.name1_2.Position = UDim2.new(0.185267851, 0, 0.404081643, 0)
+Instances.name1_2.BorderSizePixel = 0
+Instances.name1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name1_2.Text = "This is all we have sadly. More may be coming soon, depending on vulnerabilities in the games."
+Instances.name1_2.TextWrapped = true
+Instances.name1_2.TextSize = 14
+Instances.name1_2.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.name1_2.TextScaled = true
 
-UICorner_3.Parent = Knife
-UICorner_3.CornerRadius = UDim.new(0, 15)
+Instances.X.Name = "X"
+Instances.X.Parent = Instances.Frame
+Instances.X.Size = UDim2.new(0, 50, 0, 50)
+Instances.X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.X.BackgroundTransparency = 0.5
+Instances.X.Position = UDim2.new(0.888392866, 0, -0.00204081624, 0)
+Instances.X.BorderSizePixel = 0
+Instances.X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Instances.X.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.X.Text = "X"
+Instances.X.TextWrapped = true
+Instances.X.TextSize = 14
+Instances.X.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.X.TextScaled = true
 
-name1_2.Name = "name1"
-name1_2.Parent = UIFrame
-name1_2.BackgroundColor3 = Color3.new(1, 1, 1)
-name1_2.BackgroundTransparency = 1
-name1_2.BorderColor3 = Color3.new(0, 0, 0)
-name1_2.BorderSizePixel = 0
-name1_2.Position = UDim2.new(0.185267851, 0, 0.404081643, 0)
-name1_2.Size = UDim2.new(0, 282, 0, 253)
-name1_2.Font = Enum.Font.FredokaOne
-name1_2.Text = "This is all we have sadly. More may be coming soon, depending on vulnerabilities in the games."
-name1_2.TextColor3 = Color3.new(1, 1, 1)
-name1_2.TextScaled = true
-name1_2.TextSize = 14
-name1_2.TextWrapped = true
+Instances.UICorner_4.Name = "UICorner"
+Instances.UICorner_4.Parent = Instances.X
+Instances.UICorner_4.CornerRadius = UDim.new(0, 5)
 
-X.Name = "X"
-X.Parent = UIFrame
-X.BackgroundColor3 = Color3.new(1, 0, 0)
-X.BackgroundTransparency = 0.5
-X.BorderColor3 = Color3.new(0, 0, 0)
-X.BorderSizePixel = 0
-X.Position = UDim2.new(0.888392866, 0, -0.00204081624, 0)
-X.Size = UDim2.new(0, 50, 0, 50)
-X.Font = Enum.Font.FredokaOne
-X.Text = "X"
-X.TextColor3 = Color3.new(1, 1, 1)
-X.TextScaled = true
-X.TextSize = 14
-X.TextWrapped = true
+Instances.open.Name = "open"
+Instances.open.Parent = Instances.SplitsGUI
+Instances.open.Size = UDim2.new(0, 200, 0, 50)
+Instances.open.Visible = false
+Instances.open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.open.BackgroundTransparency = 0.5
+Instances.open.Position = UDim2.new(0.387935489, 0, 0.931382358, 0)
+Instances.open.BorderSizePixel = 0
+Instances.open.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Instances.open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.open.Text = "Open GUI"
+Instances.open.TextWrapped = true
+Instances.open.TextSize = 14
+Instances.open.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.open.TextScaled = true
 
-UICorner_4.Parent = X
-UICorner_4.CornerRadius = UDim.new(0, 5)
+Instances.UICorner_5.Name = "UICorner"
+Instances.UICorner_5.Parent = Instances.open
+Instances.UICorner_5.CornerRadius = UDim.new(0, 15)
 
-open.Name = "open"
-open.Parent = SplitsGUI
-open.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
-open.BackgroundTransparency = 0.5
-open.BorderColor3 = Color3.new(0, 0, 0)
-open.BorderSizePixel = 0
-open.Position = UDim2.new(0.387935489, 0, 0.931382358, 0)
-open.Size = UDim2.new(0, 200, 0, 50)
-open.Visible = false
-open.Font = Enum.Font.FredokaOne
-open.Text = "Open GUI"
-open.TextColor3 = Color3.new(1, 1, 1)
-open.TextScaled = true
-open.TextSize = 14
-open.TextWrapped = true
-
-UICorner_5.Parent = open
-UICorner_5.CornerRadius = UDim.new(0, 15)
-
--- Scripts
-
-local function RTOBFIU_fake_script() -- Gun.LocalScript 
-	local script = Instance.new('LocalScript', Gun)
-
+-- Function "LocalScript"
+(function()
+	local script = Instance.new("LocalScript", Instances.Gun)
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").GiveGun:FireServer()
 		print("Gave the Gun!")
 	end)
-end
-coroutine.wrap(RTOBFIU_fake_script)()
-local function NTQC_fake_script() -- Knife.LocalScript 
-	local script = Instance.new('LocalScript', Knife)
+end)()
 
+-- Function "LocalScript"
+(function()
+	local script = Instance.new("LocalScript", Instances.Knife)
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("ReplicatedStorage").GiveKnife:FireServer()
 		print("Gave the Knife!")
 	end)
-end
-coroutine.wrap(NTQC_fake_script)()
-local function YRTRVZB_fake_script() -- X.LocalScript 
-	local script = Instance.new('LocalScript', X)
+end)()
 
+-- Function "LocalScript"
+(function()
+	local script = Instance.new("LocalScript", Instances.X)
 	local UIframe = script.Parent.Parent
 	
 	UIframe.X.MouseButton1Click:Connect(function()
 		UIframe.Visible = false
 		UIframe.Parent.open.Visible = true
 	end)
-end
-coroutine.wrap(YRTRVZB_fake_script)()
-local function ZAMNWZ_fake_script() -- UIFrame.BlurController 
-	local script = Instance.new('LocalScript', UIFrame)
+end)()
 
+-- Function "BlurController"
+(function()
+	local script = Instance.new("LocalScript", Instances.Frame)
 	local Lighting          = game:GetService("Lighting")
 	local camera			= workspace.CurrentCamera
 	
@@ -344,11 +345,11 @@ local function ZAMNWZ_fake_script() -- UIFrame.BlurController
 	
 	BlurredGui.updateAll()
 	return BlurredGui
-end
-coroutine.wrap(ZAMNWZ_fake_script)()
-local function WCTG_fake_script() -- UIFrame.UIDrag 
-	local script = Instance.new('LocalScript', UIFrame)
+end)()
 
+-- Function "UIDrag"
+(function()
+	local script = Instance.new("LocalScript", Instances.Frame)
 	-- Made by Real_IceyDev (@lceyDex) --
 	-- Simple UI dragger (PC Only/Any device that has a mouse) --
 	
@@ -386,16 +387,17 @@ local function WCTG_fake_script() -- UIFrame.UIDrag
 			end
 		end
 	end)
-end
-coroutine.wrap(WCTG_fake_script)()
-local function MGYLSAU_fake_script() -- open.LocalScript 
-	local script = Instance.new('LocalScript', open)
+end)()
 
-	local UIframe = script.Parent.Parent.UIFrame
+-- Function "LocalScript"
+(function()
+	local script = Instance.new("LocalScript", Instances.open)
+	local UIframe = script.Parent.Parent.Frame
 	
-	script.Parent.MouseButton1Click:Connect(function()
+	UIframe.X.MouseButton1Click:Connect(function()
 		UIframe.Visible = true
-		script.Parent.Visible = false
+		UIframe.Parent.open.Visible = false
 	end)
-end
-coroutine.wrap(MGYLSAU_fake_script)()
+end)()
+
+--[[ End of generation. ]]
